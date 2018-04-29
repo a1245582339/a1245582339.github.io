@@ -179,6 +179,10 @@
 
       
 <section id="intro">
+	<!--Leancloud 操作库:-->
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <!--Valine 的核心代码库:-->
+    <script src="./dist/Valine.min.js"></script>
 	<div class="container">
 		<div class="row col-md-offset-2">
 			<div class="col-md-8">
@@ -296,24 +300,29 @@
 		</center>
 		<nav class="pagination" role="pagination">
     
-    <a class="pull-left" href="/2017/04/13/ajax 总结/" style="float: left;">
-        ← javascript  ajax的总结
+    <a class="pull-left" href="/2017/04/10/Math 对象/" style="float: left;">
+        ← javascript Math 对象
     </a>
     
     
-    <a class="pull-right" href="/2017/04/10/javascript  运算/">
-        javascript  运算 →
+    <a class="pull-right" href="/2017/04/10/数组方法/">
+        javascript 数组方法 →
     </a>
     
 </nav>
 
-		<div class="duoshuo">
-			
-
-
-
-		</div>
+		<div id="comment"></div>
 	</div>
+	<script>
+			new Valine({
+				// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+				av: AV, 
+				el: '.comment', // 
+				app_id: '0u1acDWaffWKRBa9SzBls6gc-gzGzoHsz', // 这里填写上面得到的APP ID
+				app_key: 'xhAmRHQqfn7uvERo8DkzmazE', // 这里填写上面得到的APP KEY
+				placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!' // [v1.0.7 new]留言框占位提示文字
+			});
+		</script>
 </section>
 
     

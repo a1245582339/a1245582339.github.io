@@ -179,6 +179,10 @@
 
       
 <section id="intro">
+	<!--Leancloud 操作库:-->
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <!--Valine 的核心代码库:-->
+    <script src="./dist/Valine.min.js"></script>
 	<div class="container">
 		<div class="row col-md-offset-2">
 			<div class="col-md-8">
@@ -304,13 +308,18 @@
     
 </nav>
 
-		<div class="duoshuo">
-			
-
-
-
-		</div>
+		<div id="comment"></div>
 	</div>
+	<script>
+			new Valine({
+				// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+				av: AV, 
+				el: '.comment', // 
+				app_id: '0u1acDWaffWKRBa9SzBls6gc-gzGzoHsz', // 这里填写上面得到的APP ID
+				app_key: 'xhAmRHQqfn7uvERo8DkzmazE', // 这里填写上面得到的APP KEY
+				placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!' // [v1.0.7 new]留言框占位提示文字
+			});
+		</script>
 </section>
 
     
