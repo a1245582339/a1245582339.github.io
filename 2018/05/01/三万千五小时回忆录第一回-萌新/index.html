@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>JavaScript基础引入 | 喵盟</title>
+  <title>三万五千小时回忆录-萌新 | 喵盟</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -211,90 +211,35 @@
 			<div class="row col-md-offset-2">
 				<div class="col-md-8">
 					<span class="post-meta">
-      <time datetime="2017-04-10T13:26:57.000Z" itemprop="datePublished">
-          2017-04-10
+      <time datetime="2018-05-01T15:47:43.000Z" itemprop="datePublished">
+          2018-05-01
       </time>
     
     
     | 
-    <a href='/tags/JavaScript/'>JavaScript</a>,
-    
-    <a href='/tags/前端基础/'>前端基础</a>,
-    
-    <a href='/tags/动态网页编程/'>动态网页编程</a>
+    <a href='/tags/大学回忆录/'>大学回忆录</a>
     
     
 </span>
 						<h1>
-							JavaScript基础引入
+							三万五千小时回忆录-萌新
 						</h1>
 				</div>
 			</div>
 			<div class="col-md-8 col-md-offset-2">
-				<p><strong><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=27583305&auto=1&height=66"></iframe></strong></p>
-<h1 id="javascript基础"><a href="#javascript基础" class="headerlink" title="javascript基础"></a><strong>javascript基础</strong></h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h2><ul>
-<li><strong>轻量级、直译式客户端脚本语言。</strong></li>
-<li><strong>可被所有浏览器执行，实现网页的劢态功能。</strong></li>
-<li><strong>揑入 HTML 页面后，可由所有的现代浏览器执行</strong><h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a><strong>应用场景</strong></h2></li>
-<li><strong>操作页面元素，动态改变页面内容动态改变表格内容</strong></li>
-<li><strong>编写页面动态效果轮播图层的切换 和 树形菜单等</strong></li>
-<li><strong>数据的客户端验证－减轻服务器端压力注册表单验证</strong></li>
-<li><strong>通过ajax和后端语言实现数据交互</strong></li>
-</ul>
-<h2 id="组成"><a href="#组成" class="headerlink" title="组成:"></a><strong>组成:</strong></h2><ol>
-<li><strong>ECMAScript</strong></li>
-<li><strong>BOM</strong></li>
-<li><strong>DOM</strong></li>
-</ol>
-<h2 id="ECMAScript"><a href="#ECMAScript" class="headerlink" title="ECMAScript"></a><strong>ECMAScript</strong></h2><ul>
-<li><strong>概念：JavaScript的核心，描述了语言的基本语法和数据类</strong><br><strong>型，ECMAScript是一套标准，定义了一种语言（比如JS）</strong><br><strong>是什么样子。</strong></li>
-<li><strong>编码遵循ECMAScript标准</strong></li>
-</ul>
-<h2 id="BOM-浏览器对象模型"><a href="#BOM-浏览器对象模型" class="headerlink" title="BOM(浏览器对象模型)"></a><strong>BOM(浏览器对象模型)</strong></h2><ul>
-<li><strong>概念:BOM是用于描述这种对象不对象之间层次关系的模型，浏览器对象模型提供了独立于内容的、可以与浏览器窗口进行互动的对象结构。 BOM由多个对象组成，其中代表浏览器窗口的Window对象是BOM的顶层对象，其他对象都是该对象的子对象。</strong></li>
-</ul>
-<h3 id="DOM-文档对象模型"><a href="#DOM-文档对象模型" class="headerlink" title="DOM(文档对象模型)"></a>DOM(文档对象模型)</h3><ul>
-<li><strong>概念:W3C组织推荐的处理可扩展置标语言的标准编程接口。 DOM是以面向对象方式描述的文档模型。 DOM定义了表示和修改文档所需的对象、这些对象的行为和属性以及这些对象乊间的关系。可以把DOM认为是页面上数据和结构的一个树形表示，不过页面当然可能并不是以这种树的方式具体实现。</strong></li>
-</ul>
-<p>##<strong>javascript 使用方法</strong></p>
-<ul>
-<li><p><strong>html内嵌javascript代码</strong></p>
-<blockquote>
-<p><strong><code>&lt;script type=&quot;text/javascript&quot;&gt; //JavaScript 语句&lt;/script &gt;</code></strong></p>
-</blockquote>
-</li>
-<li><p><strong>外部JS文件</strong></p>
-<blockquote>
-<p><strong><code>&lt;script src=&quot;hello.js&quot; language=&quot;javascript&quot;&gt;&lt;/script&gt;</code></strong></p>
-</blockquote>
-</li>
-<li><p><strong>行内编写方式</strong></p>
-<blockquote>
-<p><strong><code>&lt;input name=&quot;btn&quot; type=&quot;button&quot; value=&quot;弹出消息框&quot;onclick=&quot;javascript:alert(&#39;欢迎你&#39;);&quot;/&gt;</code></strong></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="事件监听"><a href="#事件监听" class="headerlink" title="事件监听"></a><strong>事件监听</strong></h2><ul>
-<li><strong>onload事件:是在页面或图片加载完成后立即执行的事件获取元素</strong></li>
-<li><strong>getElementById()：获取指定 ID 的第一个对象引用</strong></li>
-<li><strong>getElementsByName()：通过NAME属性获Document中指定名称对象的集合</strong></li>
-<li><strong>getElementsByTagName()：使用指定的标签名返回所有的元</strong><br><strong>素，这些元素是您在使用此方法时所处的元素的后代</strong></li>
-</ul>
-<h2 id="JavaScript-的调试工具及调试方法"><a href="#JavaScript-的调试工具及调试方法" class="headerlink" title="JavaScript 的调试工具及调试方法"></a><strong>JavaScript 的调试工具及调试方法</strong></h2><ul>
-<li><strong>调试工具:Firebug工具</strong></li>
-<li><strong>安装：火狐浏览器 - 选顷 – 附加组件 – 搜索Firebug添加即可。安装完成，按键盘f12即可打开Firebug</strong></li>
-<li><strong>Chrome和ie自带调试工具，不需要安装</strong></li>
-<li><strong>调试方法</strong><ol>
-<li><strong>使用Firebug的HTML 、 CSS、脚本顷查看页面的html标签、 CSS文件、 JS文件。</strong></li>
-<li><strong>Firebug控制台:</strong><ol>
-<li><strong>如果页面报错，会在控制台显示：包括错误原因和行号</strong></li>
-<li><strong>控制台最下边的输入框可以输入js代码，提交浏览器执行</strong></li>
-</ol>
-</li>
-<li><strong>利用js的console方法，可以在控制台输出js代码中的值、对象、 DOM等，以方便查看对象的结构</strong><br><strong>常用方法：console.log() console.dir()</strong></li>
-</ol>
-</li>
-</ul>
+				<p><img src="http://p8200o96r.bkt.clouddn.com/%E6%88%90%E7%BB%A9%E5%8D%95.jpg" alt="录取通知书"></p>
+<p>我这个回忆录也算是正式开始写了，既然是大学回忆录嘛，就从考上大学开始。<br>说是萌新，然而我那个时候只能叫新人，并不能叫萌新，因为不萌。<br>讲真，我是一特能撞大运的人，从中考就撞大运，从一个没什么人知道的垫底校考到天津四中，高考也是，并不是我有多少实力，我是一特不爱上学的孩子，只是不停的撞大运，真的不是谦虚，我高中就是一个一本线左右的水平，高考比一本线高了五十多分，里面有三十多都是稀里糊涂瞎蒙的。</p>
+<p>所以只能说，我在考试上，的确有过人的运气，这一点在我大学的考试和找工作中都有体现。</p>
+<h2 id="填志愿"><a href="#填志愿" class="headerlink" title="填志愿"></a>填志愿</h2><pre><code>好了接着说，我这个成绩，当时考虑了河北工业大学和天津财经大学，天科我去看了看，并不是很喜欢，就没考虑。
+</code></pre><p>当时报学校就一个原则————离家近<br>    天津人嘛，就是无下限的恋家，当时河工大也填了，但是填在了天财后面，只是因为天财比河工大离家近。<br>    我这个成绩，报的这个专业，没什么悬念就被录取了，信息管理与信息系统专业，但是只是知道这是一个和计算机有关的专业，然而并不知道是学什么的，从小就对计算机有浓厚的兴趣，<br>选了这么一个专业。这么的，我大学生涯就算开始了。</p>
+<h2 id="新生群"><a href="#新生群" class="headerlink" title="新生群"></a>新生群</h2><p>当时第一个想法就是找组织，高中一位老师教过我，上大学一定要多交朋友，扩大社交圈，我就开始各种找新生群，然后我就找到了管信系新生群，然后就在里面认识了好多好多人，印象最深的，二哥、大腿、一瓶、小受还有好多好多，还有当时已经大四的通叔，还有几位班助。现在想想那个时候还挺有意思的，一群没见过面的人在群里跟多年的朋友一样瞎聊，然而现在在一起上了四年学，反而没什么机会聊天了。</p>
+<h2 id="班助"><a href="#班助" class="headerlink" title="班助"></a>班助</h2><p>说起班助，还是挺有话说的，我们班两位班助，年哥和娴哥，一男一女，然后还有别的班的几位学长学姐。当时跟年哥属于比较聊得来的，他是系学生会文艺部部长，当时就想，我也要进文艺部，听起来就很厉害，而且我又喜欢弹琴唱歌什么的，又有很强的表演欲（可能是水瓶座戏精本精了），而且当时几位班助基本都是学生会的部长副部，又是学生会的干部，又负责带新生，羡慕的不得了，就把他们当成了自己的榜样，希望有一天我也能站到他们那个位置。</p>
+<h2 id="报到"><a href="#报到" class="headerlink" title="报到"></a>报到</h2><p>有话则长，无话则短。这是评书里经常用的一句话，虽然到报到期间发生了不少事，但是很多记不清了，而且写出来也比较无趣，就干脆直接报到吧。</p>
+<p>那天起个大早，我爸开车给我送到学校去，轻松找到报到的地方，看见了活的班助（之前都是网上聊 总算见到活的了），看他们还是很辛苦的，给了我一大摞不知道是干什么的材料，告诉我拿这个去哪干什么，现在也都不记得了，只记得拎着一个天财的布袋，里面全是材料，稀里糊涂就报到结束了，也没太来得及看看各位班助，只记得娴哥超美（画重点），别的都忘了。<br>哦对，我是我们系，第二个去报到的，第一个，是我的室友，也是当初在群里就认识的，就是前文提到那个一瓶。之前跟他见过一面，他很早就到学校了，在干训宿舍住了一段时间，所以报到比我还早。到了宿舍他在那收拾东西，因为之前见过，又在群里认识，也就没那么多客套话。后来另一位室友杨杉也来了，也是群里认识的，暑假的时候约着吃了顿饭，最后一位室友迟迟没有到，那天大概收拾了一下宿舍，把生活用品什么的都放好我就回家了。<br>转天我去的时候，发现最后一位室友到了，第一感觉就是，我们宿舍除了杨杉比较瘦以外，三个胖子，这位也是胖胖的，以至于后来大伙都叫他胖子，瘦下来之后，还是被叫胖子。</p>
+<h2 id="第一夜"><a href="#第一夜" class="headerlink" title="第一夜"></a>第一夜</h2><p>就这么的，我的大学才正式开始。第一个晚上，大伙串串宿舍，互相认识一下，群里聊了很久的互相面个基，然后各自回到宿舍做自己的事。<br>给我印象最深的就是，第一天晚上，我的三位室友，一瓶在做高数题，杨杉在练书法，胖子在看一本叫《大数据时代》的书，而我，坐那玩手机。<br>哇当时就感觉，我是不是很堕落啊，实在受不了，然后我选择————上床玩手机，不看他们。一个学渣最后的倔强。</p>
+<p>第一天晚上，大伙都睡不着，然后我的三个室友讨论LOL，而我，又是一个不玩LOL的人，第一天的感觉就是，我会不会不合群，学习学不过人家，打游戏又不会，就这么纠结着，度过了大学的第一个晚上。</p>
+<h2 id=""><a href="#" class="headerlink" title="*"></a><strong><strong><strong><strong><strong><strong><strong><strong>*</strong></strong></strong></strong></strong></strong></strong></strong></h2><p>第一次正式写回忆录，文笔不行，水平也有限，也许写的多了就好了。今天写下了我大学的开端，这才想起来我那个时候还真的挺天真的，回忆起当时的自己，可能这就是写回忆录的目的吧。</p>
+<p>如果你有感同身受，可以在底下填上你的昵称，留下你的话，也可以和我私聊，来者不拒。</p>
 
 					<div class="clearfix"></div>
 					<hr class="nogutter">
@@ -302,10 +247,10 @@
 
 			<nav class="pagination" role="pagination">
     
-    <a class="pull-left" href="/2017/04/10/BOM 对象/" style="float: left;">
-        ← javascript Bom 对象
-    </a>
     
+    <a class="pull-right" href="/2018/04/30/三万千五小时回忆录-开头瞎BB/">
+        三万五千小时回忆录-开头瞎BB →
+    </a>
     
 </nav>
 
