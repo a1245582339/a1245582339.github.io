@@ -509,7 +509,7 @@ xhr.open(“请求方式”,”请求
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2017/04/10/java script 数据类型/">javascript 数据类型</a></h3>
+                    <h3><a href="/2017/04/10/BOM 对象/">javascript Bom 对象</a></h3>
                     <span>
                         <span class="post-meta">
       <time datetime="2017-04-10T13:30:16.000Z" itemprop="datePublished">
@@ -531,24 +531,19 @@ xhr.open(“请求方式”,”请求
                 <div class="col-md-8">
                     <p class="index-excerpt">
                       
-                        
-javascript 数据类型
+                        Window 对象##概念：
 
-
-//数字类型*
-var num=3;
-console.log(typeof num);
-console.log(typeof(typeof num) );*
-console.log(num/“a”);
-console.log(typeof(num/“a”));*
-var str=”54sdwe5421ds”;
-console.log(typeof str)
-console.log(“aaaaaaaa
+Window 对象表示浏览器中打开的窗口。如果文档包含框架（frame 或 iframe 标签），浏览器会为 HTML 文档创建一个 window 对象，并为每个框架创建一个额外的 window 对象
+属性
+innerHeight 返回窗口的文档显示区的高度
+innerWidth 返回窗口的文档显示区的宽度
+outerHeight 返回窗口的外部高度 包括滚动条、地址栏、收藏栏等
+outerwidth 返
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2017/04/10/java script 数据类型/">Read More...</a>
+                        <a href="/2017/04/10/BOM 对象/">Read More...</a>
                     </p>
                     
                 </div>
@@ -619,7 +614,7 @@ JS运算运算符号
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2017/04/10/BOM 对象/">javascript Bom 对象</a></h3>
+                    <h3><a href="/2017/04/10/07 01  javascript/">javascript基本对象,数据类型,常量,变量</a></h3>
                     <span>
                         <span class="post-meta">
       <time datetime="2017-04-10T13:30:16.000Z" itemprop="datePublished">
@@ -641,19 +636,77 @@ JS运算运算符号
                 <div class="col-md-8">
                     <p class="index-excerpt">
                       
-                        Window 对象##概念：
+                        
+javascript基本对象,数据类型,常量,变量javascript数据类型
+基本数据类型
+Number
+String
+Boolean
+Null
+Undefined
 
-Window 对象表示浏览器中打开的窗口。如果文档包含框架（frame 或 iframe 标签），浏览器会为 HTML 文档创建一个 window 对象，并为每个框架创建一个额外的 window 对象
-属性
-innerHeight 返回窗口的文档显示区的高度
-innerWidth 返回窗口的文档显示区的宽度
-outerHeight 返回窗口的外部高度 包括滚动条、地址栏、收藏栏等
-outerwidth 返
+
+混合数据类型
+Object
+
+
+js中变量是松散类型的，因此有时我们需要检测变量的数据类型
+typeof操作符可以检测变量的数据类型（输出的是一个关于数据类型的字符串）
+
+数字(Number)
+介绍Number类型包含整数和浮点数（浮点数数值必须包含一个小数点，且小
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2017/04/10/BOM 对象/">Read More...</a>
+                        <a href="/2017/04/10/07 01  javascript/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2017/04/10/JS 对象 类,定时器/">javascript 函数 对象 定时器</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2017-04-10T13:30:16.000Z" itemprop="datePublished">
+          2017-04-10
+      </time>
+    
+    
+    | 
+    <a href='/tags/JavaScript/'>JavaScript</a>,
+    
+    <a href='/tags/前端基础/'>前端基础</a>,
+    
+    <a href='/tags/动态网页编程/'>动态网页编程</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p class="index-excerpt">
+                      
+                        JS函数,对象/类,定时器JS函数
+JavaScript函数定义：
+
+不带参数的函数
+
+1234function functionname()&#123;//这里是要执行的代码&#125;
+
+
+&gt; 带参数的函数function myFunction(var1,var2){//这里是要执行的代码}&gt; 调用不带参数的函数myFunction()&gt; 调用带参数的函数myFunction(argument1,argument2
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2017/04/10/JS 对象 类,定时器/">Read More...</a>
                     </p>
                     
                 </div>
@@ -707,53 +760,6 @@ ceil(
                     
                     <p class="pull-right readMore">
                         <a href="/2017/04/10/Math 对象/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2017/04/10/JS 对象 类,定时器/">javascript 函数 对象 定时器</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2017-04-10T13:30:16.000Z" itemprop="datePublished">
-          2017-04-10
-      </time>
-    
-    
-    | 
-    <a href='/tags/JavaScript/'>JavaScript</a>,
-    
-    <a href='/tags/前端基础/'>前端基础</a>,
-    
-    <a href='/tags/动态网页编程/'>动态网页编程</a>
-    
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p class="index-excerpt">
-                      
-                        JS函数,对象/类,定时器JS函数
-JavaScript函数定义：
-
-不带参数的函数
-
-1234function functionname()&#123;//这里是要执行的代码&#125;
-
-
-&gt; 带参数的函数function myFunction(var1,var2){//这里是要执行的代码}&gt; 调用不带参数的函数myFunction()&gt; 调用带参数的函数myFunction(argument1,argument2
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2017/04/10/JS 对象 类,定时器/">Read More...</a>
                     </p>
                     
                 </div>
