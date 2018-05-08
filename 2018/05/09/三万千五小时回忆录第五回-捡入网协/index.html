@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>JQuery中的遍历 | 喵盟</title>
+  <title>三万五千小时回忆录第四回-捡入网协 | 喵盟</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -211,272 +211,29 @@
 			<div class="row col-md-offset-2">
 				<div class="col-md-8">
 					<span class="post-meta">
-      <time datetime="2017-04-10T13:30:16.000Z" itemprop="datePublished">
-          2017-04-10
+      <time datetime="2018-05-08T16:05:00.000Z" itemprop="datePublished">
+          2018-05-09
       </time>
     
     
     | 
-    <a href='/tags/JavaScript/'>JavaScript</a>,
-    
-    <a href='/tags/前端基础/'>前端基础</a>,
-    
-    <a href='/tags/动态网页编程/'>动态网页编程</a>
+    <a href='/tags/大学回忆录/'>大学回忆录</a>
     
     
 </span>
 						<h1>
-							JQuery中的遍历
+							三万五千小时回忆录第四回-捡入网协
 						</h1>
 				</div>
 			</div>
 			<div class="col-md-8 col-md-offset-2">
-				<h2 id="jQuery-中的遍历"><a href="#jQuery-中的遍历" class="headerlink" title="jQuery 中的遍历"></a>jQuery 中的遍历</h2><blockquote>
-<p>jQuery 遍历 ：用于根据其相对于其他元素的关系来“查找”（或选取）HTML 元素 。以某项选择开始，并沿着这个选择移动，直到抵达期望的元素为止。<br><strong>jQ遍历分为四种，1. 想上遍历 2. 向下遍历 3. 过滤 4. 水平遍历</strong></p>
-</blockquote>
-<ul>
-<li><p><strong>.eq </strong>过滤遍历</p>
-<ul>
-<li><p>用法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&apos;li&apos;).eq(0).css(&apos;background&apos;,&apos;red&apos;);</div></pre></td></tr></table></figure>
-</li>
-<li><p>说明：</p>
-<blockquote>
-<p>查找获取到所有li标签中的<strong>第几个，从零开始</strong></p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><p><strong>.first()</strong> 过滤遍历</p>
-<ul>
-<li><p>用法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&apos;li&apos;).first().css(&apos;background&apos;,&apos;red&apos;);</div></pre></td></tr></table></figure>
-</li>
-<li><p>说明：</p>
-<blockquote>
-<p>查找获取到所有li标签中的<strong>第一个</strong></p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><p><strong>.last()</strong> 过滤遍历</p>
-<ul>
-<li><p>用法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&apos;li&apos;).last().css(&apos;background&apos;,&apos;red&apos;);</div></pre></td></tr></table></figure>
-</li>
-<li><p>说明：</p>
-<blockquote>
-<p>查找获取到所有li标签中的<strong>最后一个</strong></p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><p><strong>.slice()</strong> 过滤遍历</p>
-<ul>
-<li><p>用法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&apos;li&apos;).slice(2,4).css(&apos;background&apos;,&apos;red&apos;);</div></pre></td></tr></table></figure>
-</li>
-<li><p>说明：</p>
-<blockquote>
-<p>查找获取到所有li标签中的<strong>第几个到第几个，下标从零开始，要头不要尾</strong></p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p><strong>.children(选择器)</strong> 向下遍历</p>
-<ul>
-<li><p>用法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&apos;ul&apos;).children(&apos;div&apos;).css(&apos;background&apos;,&apos;red&apos;);</div></pre></td></tr></table></figure>
-</li>
-<li><p>说明：</p>
-<blockquote>
-<p>查找获取到所有ul标签中的<strong>所有【直接子元素】是选择器的元素</strong></p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p><strong>.find(选择器)</strong> 向下遍历</p>
-<ul>
-<li><p>用法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&apos;ul&apos;).find(&apos;div&apos;).css(&apos;background&apos;,&apos;red&apos;);</div></pre></td></tr></table></figure>
-</li>
-<li><p>说明：</p>
-<blockquote>
-<p>查找获取到所有ul标签中的<strong>所有后代是选择器的元素</strong></p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p><strong>.parent()</strong> 向上遍历</p>
-<ul>
-<li><p>用法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&apos;ul&apos;).parent().css(&apos;background&apos;,&apos;red&apos;);</div></pre></td></tr></table></figure>
-</li>
-<li><p>说明：</p>
-<blockquote>
-<p>返回ul的<strong>直接父元素</strong></p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p>更多遍历方法</p>
-<ul>
-<li>向上遍历 （查找元素祖先）</li>
-</ul>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>遍历方法</th>
-<th>描述</th>
-<th>例子</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>parent()</td>
-<td>返回被选元素的直接父元素 (只会向下一级对 DOM 树进行遍历 )</td>
-<td>$(“span”).parent();</td>
-</tr>
-<tr>
-<td>parents()</td>
-<td>返回被选元素的所有祖先元素，它一路向上直到文档的根元素 (<code>&lt;html&gt;</code>)</td>
-<td>$(“span”).parents();$(“span”).parents(“ul”)返回所有 <code>&lt;span&gt;</code> 元素的所有祖先，并且它是<code>&lt;ul&gt;</code> 元素</td>
-</tr>
-<tr>
-<td>parentsUntil()</td>
-<td>返回介于两个给定元素之间的所有祖先元素</td>
-<td>$(“span”).parentsUntil(“div”);</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">* 向下遍历（查找元素后代）</div></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>遍历方法</th>
-<th>描述</th>
-<th>例子</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>children()</td>
-<td>返回被选元素的所有直接子元素(只会向下一级对 DOM 树进行遍历 )</td>
-<td>$(“div”).children()$(“div”).children(“p.1”)返回类名为 “1” 的所有 <code>&lt;p&gt;</code> 元素，并且它们是<code>&lt;div&gt;</code> 的直接子元素</td>
-</tr>
-<tr>
-<td>find()</td>
-<td>返回被选元素的后代元素，一路向下直到最后一个后代</td>
-<td>$(“div”).find(“span”);$(“div”).find(“*”);返回 <code>&lt;div&gt;</code> 的所有后代</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">* 水平遍历方法(元素同胞元素)：</div></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>遍历方法</th>
-<th>描述</th>
-<th>例子</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>siblings()</td>
-<td>返回被选元素的所有同胞元素</td>
-<td>$(“h2”).siblings();$(“h2”).siblings(“p”);返回属于 <code>&lt;h2&gt;</code> 的同胞元素的所有 <code>&lt;p&gt;</code> 元素</td>
-</tr>
-<tr>
-<td>next() prev()</td>
-<td>返回被选元素的下一个/上一个同胞元素</td>
-<td>$(“h2”).next();</td>
-</tr>
-<tr>
-<td>nextAll()prevAll()</td>
-<td>返回被选元素的所有跟随的同胞（前面同胞）元素</td>
-<td>$(“h2”).nextAll();</td>
-</tr>
-<tr>
-<td>nextUntil()prevUntil()</td>
-<td>返回介于两个给定参数之间的所有跟随的同胞（前面同胞）元素</td>
-<td>$(“h2”).nextUntil(“h6”);</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">* 过滤：</div></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>遍历方法</th>
-<th>描述</th>
-<th>例子</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>first()</td>
-<td>返回被选元素的首个元素</td>
-<td>$(“div p”).first();</td>
-</tr>
-<tr>
-<td>last()</td>
-<td>返回被选元素的最后一个元素</td>
-<td>$(“div p”).last();</td>
-</tr>
-<tr>
-<td>eq()</td>
-<td>返回被选元素中带有指定索引号的元素</td>
-<td>$(“p”).eq(1);</td>
-</tr>
-<tr>
-<td>filter()</td>
-<td>不匹配这个标准的元素会被从集合中删除，匹配的元素会被返回</td>
-<td>$(“p”).filter(“.intro”);</td>
-</tr>
-<tr>
-<td>not() not()</td>
-<td>方法返回不匹配标准的所有元素not() 方法不 filter() 相反。</td>
-<td>$(“p”).not(“.intro”);</td>
-</tr>
-</tbody>
-</table>
-<p><code>* 遍历所有 **each遍历：**    * each()方法规定为每个匹配元素指定运行的函数        &gt; 语法：</code>$(selector).each(function(index,element))<code>* 例如         $(&quot;button&quot;).click(function(){    $(&quot;li&quot;).each(function(){    alert($(this).text())   });});</code></p>
-<h2 id="jQuery制作下拉列表"><a href="#jQuery制作下拉列表" class="headerlink" title="jQuery制作下拉列表"></a>jQuery制作下拉列表</h2><ul>
-<li>下拉列表<ul>
-<li>三级下拉列表（竖向）：单击一级菜单时展开二级菜单，单击二级菜单时展开三级菜单，当单击另一个一级菜单时同级其它菜单将收起。</li>
-</ul>
-</li>
-<li>多级下拉列表（横向）：<ul>
-<li>鼠标经过一级菜单时展开二级菜单，经过二级菜单<br>时展开三级菜单，依次类推</li>
-</ul>
-</li>
-</ul>
-<h2 id="easing-js的使用"><a href="#easing-js的使用" class="headerlink" title="easing.js的使用"></a>easing.js的使用</h2><blockquote>
-<p><a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank" rel="external">easing.js</a>是个极小的 JavaScript 第三方包，支持 CSS3 的动画效果，非常简单美观。<br>move.js中有编写了多种效果</p>
-</blockquote>
-<ul>
-<li>老规矩，要使用，先引用<code>&lt;script src=&quot;js/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;// easing是基于jQ的，说要在引用他之前要先引用jQ&lt;script src=&quot;js/easing.js&quot;&gt;&lt;/script&gt;</code></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(this).find(&quot;ul&quot;).sto</div><div class="line">p().slideDown(600,&apos;效果名称&apos;);</div><div class="line"></div><div class="line">//我们只需在这更换效果名称即可：如easeIn,easeOut，elasticOut等。</div></pre></td></tr></table></figure>
-<h2 id="animate-css的使用"><a href="#animate-css的使用" class="headerlink" title="animate.css的使用"></a>animate.css的使用</h2><blockquote>
-<p><a href="http://www.dowebok.com/demo/2014/98/" target="_blank" rel="external">animate.css</a>animate.css 是一个来自国外的 CSS3 动画库，它预设了抖动（shake）、闪烁（flash）、弹跳（bounce）、翻转（flip）、旋转（rotateIn/rotateOut）、淡入淡出（fadeIn/fadeOut）等多达 60 多种动画效果，几乎包含了所有常见的动画效果。</p>
-</blockquote>
-<p>虽然借助 animate.css 能够很方便、快速的制作 CSS3 动画效果，但还是建议看看 animate.css 的代码，也许你能从中学到一些东西。</p>
-<ul>
-<li><p>使用</p>
-<blockquote>
-<p>引入文件：<code>&lt;link href=&quot;animate.css&quot; type=&quot;text/css&quot; /&gt;</code><br>HTML及使用：<code>&lt;div class=“animated bounce” &gt;&lt;/div&gt;</code><br>刷新页面就可看到动画效果</p>
-</blockquote>
-</li>
-</ul>
+				<p>总算写到这了，这可能是我大学做的最正确的一个选择了，加了网协。</p>
+<h2 id="错过-amp-amp-捡回"><a href="#错过-amp-amp-捡回" class="headerlink" title="错过&amp;&amp;捡回"></a>错过&amp;&amp;捡回</h2><p>网协，全称天津财经大学互联网技术协会。网协纳新我根本不知道，那个时候各个社团进班宣讲，讲自己的社团哪里比较好，就是打个广告。然而那个时候我在学生会排练话剧，根本不知道这个社团。<br>后来那个时候的女朋友跟我说想加网协，有免费的课，她有自己喜欢的东西我当然高兴，后来也陪她去过几节网协的课，一次是教dreamwaver的，一次是教ubantu系统安装的，剩下的不记得了，毕竟我对这方面从小就喜欢，自然学的也比较快，也加了网协的一个小群。<br>正式和网协扯上关系是在第一个寒假，跟那个时候的女朋友，还有一位学姐，还有其他几个人报了三创赛，我是真心想做点实实在在的东西，学姐去做什么财务分析啊一类的东西了，我也看不懂，我就选择了做网页。<br>当时我也不知道网页应该怎么做，就在网上现学，dreamwaver的教程，从早看到晚，基本是边学边做，一个寒假吧，做了那么几个网页，虽然三创赛因为各种原因放弃了，但是我还是想把做网页这个技能好好学一学的。</p>
+<p>然后我就想到了网协，找了好久才找到那个群，群主是当初教安装ubantu系统的那个学长，我就找他问，看看能不能给一些建议。<br>然后这个学长把我推给了当时的网协会长，梦婷学姐，聊了几句感觉真的是一位很有范儿的姐姐，然后这个学姐又把我推荐给了一位康学长（这一顿转圈，不过也好，多认识几个人），这位康学长算是正式把我带入了网协。</p>
+<p>后来经常调侃说，我是半路上被网协捡来的。</p>
+<h2 id="义诊"><a href="#义诊" class="headerlink" title="义诊"></a>义诊</h2><p>电脑义诊这个活动应该是我在大学期间参加过最多的了，网协的义诊就多的数不清，我还自己办过好几次。<br>刚刚加入网协的时候正好赶上一次，当时听说可以给人重装系统，还能拆机除尘，感觉特高大上，重装系统我没问题，毕竟从初中我就在折腾电脑系统。就这个拆机除尘，感觉厉害死了，之前就听说过，但是感觉是特别精密的操作，细小的螺丝和排线怎么记住哪对哪的。当时就想跟学长好好学一学。<br>因为当时没有拆电脑这项技能，义诊只是给人装了装系统，但是还是全程高度积极性参与了，并且得到了梦婷学姐还算不错的评价，也算是加入网协了。至此，也算是加入了一个一直陪伴我大学生活的社团。</p>
+<hr>
+<p>先写这么点吧，毕竟说起网协能写的太多了，一篇不够我写的。<br>大学加入一个社团，最快乐的是能有一群有共同爱好的人，以后有时间关于网协我还会再写。<br>我也想有更多的人把你们大学的故事分享出来，如果愿意可以写到评论里~~~</p>
 
 					<div class="clearfix"></div>
 					<hr class="nogutter">
@@ -484,13 +241,9 @@
 
 			<nav class="pagination" role="pagination">
     
-    <a class="pull-left" href="/2017/04/10/数组方法/" style="float: left;">
-        ← javascript 数组方法
-    </a>
     
-    
-    <a class="pull-right" href="/2017/04/10/javascript  运算/">
-        javascript  运算 →
+    <a class="pull-right" href="/2018/05/08/三万千五小时回忆录第四回-学习？不存在的/">
+        三万五千小时回忆录第四回-学习？不存在的 →
     </a>
     
 </nav>
